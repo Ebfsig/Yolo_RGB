@@ -73,7 +73,7 @@ MAX_DIAG_LOG    = 5_000  # cap on diagnostic records kept per orthomosaic
 @dataclass
 class Config:
     base_path:    str   = "K:/.../" # change for your path
-    buffer_m:     float = 1        # buffer around the polygon (metres)
+    buffer_m:     float = 0.5        # buffer around the polygon (metres)
     out_sz:       int   = 1024     # YOLO output tile size
     train_ratio:  float = 0.8
     random_seed:  int   = 42
