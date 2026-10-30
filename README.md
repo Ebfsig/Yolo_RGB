@@ -67,7 +67,7 @@ All parameters live in the `Config` dataclass near the top of the script:
 | Parameter | Default | Description |
 |---|---|---|
 | `base_path` | `"K:/Posdoct/Datos/Ortos/"` | Root folder holding the TIF/SHP pairs and where outputs are written. **Change this to your own path.** |
-| `buffer_m` | `1` | Buffer added around each polygon before cropping, in **metres**. Requires a metric (projected) CRS. |
+| `buffer_m` | `0.5` | Buffer added around each polygon before cropping, in **metres**. Requires a metric (projected) CRS. |
 | `out_sz` | `1024` | Output tile size in pixels (`out_sz × out_sz`). Should match the `imgsz` used during training. |
 | `train_ratio` | `0.8` | Fraction of tiles assigned to `train/`; the remainder goes to `val/`. The split is at the **tile** level. |
 | `random_seed` | `42` | Seed governing the train/val shuffle and `random`/`numpy`. Ensures reproducibility. |
